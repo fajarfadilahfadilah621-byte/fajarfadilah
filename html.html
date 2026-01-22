@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Monitoring Server</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e2f;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .dashboard {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .server-card {
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #2b2b3d;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+        .icon {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .status-box {
+            margin-top: 10px;
+            padding: 8px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .online {
+            background-color: green;
+        }
+
+        .offline {
+            background-color: red;
+        }
+
+        .maintenance {
+            background-color: orange;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Dashboard Monitoring Server Sekolah</h1>
+
+<div class="dashboard">
+
+    <div class="server-card">
+        <div class="icon">🖥️</div>
+        <h3>Server Akademik</h3>
+        <p>IP Address: 192.168.50.2</p>
+        <p>Uptime: 12 Jam</p>
+        <div class="status-box online">ONLINE</div>
+    </div>
+
+    <div class="server-card">
+        <div class="icon">🧪</div>
+        <h3>Server CBT Ujian</h3>
+        <p>IP Address: 192.168.50.3</p>
+        <p>Uptime: 5 Jam</p>
+        <div class="status-box offline">OFFLINE</div>
+    </div>
+
+    <div class="server-card">
+        <div class="icon">🖥️</div>
+        <h3>Server Akademik</h3>
+        <p>IP Address: 192.168.50.5</p>
+        <div class="status-box maintenance">MAINTENANCE</div>
+
+</div>
+
+<div class="footer">
+    <button>REFRESH STATUS</button>
+</div>
+
+</body>
+</html>
